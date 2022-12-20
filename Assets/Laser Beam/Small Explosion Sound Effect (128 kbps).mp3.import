@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Small Explosion Sound Effect (128 kbps).mp3-30fedba95ce70018070b3146232937e1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Laser Beam/Small Explosion Sound Effect (128 kbps).mp3"
+dest_files=[ "res://.import/Small Explosion Sound Effect (128 kbps).mp3-30fedba95ce70018070b3146232937e1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

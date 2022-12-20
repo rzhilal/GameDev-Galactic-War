@@ -69,7 +69,7 @@ surfaces/0 = {
 extents = Vector3( 6.35526, 2.17245, 7.72167 )
 
 [sub_resource type="BoxShape" id=7]
-extents = Vector3( 6.67479, 2.81246, 6.65097 )
+extents = Vector3( 6.4715, 1.98165, 8.29022 )
 
 [node name="spaceship4" type="KinematicBody" groups=["enemies"]]
 script = ExtResource( 4 )

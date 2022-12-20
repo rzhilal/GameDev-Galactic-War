@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Spaceship/Black.material" type="Material" id=1]
 [ext_resource path="res://Script/Playscene/PesawatPlay.gd" type="Script" id=2]
@@ -19,7 +19,13 @@ surfaces/0 = {
 "vertex_count": 1806
 }
 
-[node name="spaceship1" type="KinematicBody"]
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 5.17904, 1, 5.88039 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 24.1579, 11.8365, 1 )
+
+[node name="spaceship1" type="KinematicBody" groups=["avatarbody"]]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 script = ExtResource( 2 )
 
@@ -38,3 +44,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36083e-06, 0.759828, -15.566
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.704197, 1.05107, -7.93485 )
 lifetime = 0.7
 randomness = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07172e-06, 1.41797, -12.2591 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.25298, 0 )
+shape = SubResource( 3 )

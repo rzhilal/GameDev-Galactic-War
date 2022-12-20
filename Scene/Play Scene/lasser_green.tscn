@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Spaceship/Material_001.material" type="Material" id=1]
 [ext_resource path="res://Script/Playscene/lasser.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Laser Beam/Laser Gun Sound Effect (128 kbps).mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Laser Beam/Small Explosion Sound Effect (128 kbps).mp3" type="AudioStream" id=4]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "lasser_green_Cube002"
@@ -33,5 +35,14 @@ mesh = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 shape = SubResource( 2 )
+
+[node name="laser beam" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 3 )
+unit_db = 22.01
+autoplay = true
+
+[node name="explode" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 4 )
+unit_db = 30.344
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
