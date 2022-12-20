@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Play Scene/spaceship1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Script/Playscene/score.gd" type="Script" id=2]
 [ext_resource path="res://Scene/Play Scene/StarParticles.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scene/Play Scene/EnemySpawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Spaceship/crosshair1.png" type="Texture" id=5]
@@ -14,7 +15,7 @@ background_mode = 2
 background_sky = SubResource( 1 )
 auto_exposure_enabled = true
 
-[node name="Spatial" type="Spatial"]
+[node name="main" type="Spatial"]
 
 [node name="spaceship1" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.915506, 2.81014 )
@@ -38,3 +39,19 @@ transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 3.11172, -8.12499 )
 
 [node name="EnemySpawner" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -116.139 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="TEXT" type="Label" parent="HUD"]
+margin_left = 11.0
+margin_top = 8.0
+margin_right = 158.0
+margin_bottom = 65.0
+text = "SCORE : "
+
+[node name="Label" type="Label" parent="HUD/TEXT"]
+margin_left = 54.0
+margin_top = 1.0
+margin_right = 94.0
+margin_bottom = 15.0
+script = ExtResource( 2 )

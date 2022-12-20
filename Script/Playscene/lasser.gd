@@ -15,6 +15,9 @@ func _on_Area_body_entered(body):
 		main.add_child(particles)
 		particles.transform.origin = transform.origin
 		body.queue_free()
+		Globals.score += 50
 		explodeSound.play()
 		visible = false
 		$Area/CollisionShape.disabled = true
+
+
