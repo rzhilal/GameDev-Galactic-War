@@ -1,21 +1,30 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Play Scene/spaceship1.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Spaceship/environment.png" type="Texture" id=2]
 [ext_resource path="res://Scene/Play Scene/StarParticles.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene/Play Scene/EnemySpawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Spaceship/crosshair1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Spaceship/environment.png" type="Texture" id=6]
 
 [sub_resource type="PanoramaSky" id=1]
-panorama = ExtResource( 2 )
+panorama = ExtResource( 6 )
 
 [sub_resource type="Environment" id=2]
 background_mode = 2
 background_sky = SubResource( 1 )
 auto_exposure_enabled = true
 
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 28.8285, 10.4058, 1 )
+
 [node name="Spatial" type="Spatial"]
 
 [node name="spaceship1" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.915506, 2.87029 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.915506, 2.81014 )
+
+[node name="Sprite3D" type="Sprite3D" parent="spaceship1"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 3.09308e-06, 1.66767, -49.1909 )
+texture = ExtResource( 5 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.972024, 0 )
@@ -29,3 +38,9 @@ transform = Transform( 1, 0, 0, 0, 0.848039, 0.529934, 0, -0.529934, 0.848039, 0
 
 [node name="StarParticles" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 3.11172, -8.12499 )
+
+[node name="EnemySpawner" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -116.139 )
+
+[node name="CollisionShape" type="CollisionShape" parent="." groups=["avatarbody"]]
+shape = SubResource( 3 )

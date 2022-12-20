@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Spaceship/HullColor_002.material" type="Material" id=1]
 [ext_resource path="res://Assets/Spaceship/HullPlain_002.material" type="Material" id=2]
 [ext_resource path="res://Assets/Spaceship/CockpitGlass_002.material" type="Material" id=3]
+[ext_resource path="res://Script/Playscene/enemy.gd" type="Script" id=4]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "spaceship4_Cube"
@@ -64,7 +65,14 @@ surfaces/0 = {
 "vertex_count": 32
 }
 
-[node name="spaceship4" type="Spatial"]
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 6.35526, 2.17245, 7.72167 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 6.67479, 2.81246, 6.65097 )
+
+[node name="spaceship4" type="KinematicBody" groups=["enemies"]]
+script = ExtResource( 4 )
 
 [node name="Cube" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
@@ -81,3 +89,13 @@ mesh = SubResource( 4 )
 [node name="Cube003" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
 mesh = SubResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 6 )
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 7 )
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
