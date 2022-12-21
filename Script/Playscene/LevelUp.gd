@@ -8,4 +8,3 @@ func _process(delta):
 		visible = true
 		yield(get_tree().create_timer(3), "timeout")
 		visible = false
-		Globals.level_increasing = false

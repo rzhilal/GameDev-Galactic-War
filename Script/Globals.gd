@@ -4,7 +4,6 @@ var score = 0
 var life = 3
 var power = false
 var level_spawn = 0.8
-var level_increasing = false
 
 func reset():
 	score = 0
@@ -12,4 +11,3 @@ func reset():
 	power = false
 	level_spawn = 0.8
 	
-	level_increasing = false
