@@ -16,4 +16,5 @@ func _on_continue_pressed():
 	
 func _on_exit_menu_pressed():
 	get_tree().paused = false
+	Globals.reset()
 	get_tree().change_scene("res://Scene/Menu/mainmenu.tscn")

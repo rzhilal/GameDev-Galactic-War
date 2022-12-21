@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Fonts/king-gaming-free-trial.regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Spaceship/environment.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Script/Menu/Shop2.gd" type="Script" id=5]
 [ext_resource path="res://Scene/Shop/Button.gd" type="Script" id=6]
 [ext_resource path="res://Scene/Shop/Beli3.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Images/space3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/space2.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFont" id=6]
 size = 23
@@ -109,19 +111,19 @@ text = "Beli"
 script = ExtResource( 7 )
 
 [node name="Space1" type="Sprite" parent="."]
-position = Vector2( 166, 181 )
-scale = Vector2( 0.481308, 0.465438 )
+position = Vector2( 159, 171 )
+scale = Vector2( 0.203154, 0.208645 )
 texture = ExtResource( 4 )
 
 [node name="Space2" type="Sprite" parent="."]
-position = Vector2( 507, 181 )
-scale = Vector2( 0.481308, 0.465438 )
-texture = ExtResource( 4 )
+position = Vector2( 506, 186 )
+scale = Vector2( 0.122656, 0.193982 )
+texture = ExtResource( 9 )
 
-[node name="Space3" type="Sprite" parent="."]
-position = Vector2( 836, 181 )
-scale = Vector2( 0.481308, 0.465438 )
-texture = ExtResource( 4 )
+[node name="Space3" type="Sprite" parent="Space2"]
+position = Vector2( 2682.29, 92.7922 )
+scale = Vector2( 1.30255, 0.929594 )
+texture = ExtResource( 8 )
 
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="Beli1" to="Beli1" method="_on_Beli1_pressed"]
