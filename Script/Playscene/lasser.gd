@@ -2,8 +2,8 @@ extends KinematicBody
 
 var velo = Vector3()
 var KillParticles = load("res://Scene/Play Scene/KillParticles.tscn")
-onready var main = get_tree().current_scene
 onready var explodeSound = $explode
+onready var main = get_tree().current_scene
 
 func _physics_process(delta):
 	move_and_slide(velo)
