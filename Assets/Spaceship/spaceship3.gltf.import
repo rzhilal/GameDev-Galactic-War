@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/PesawatAvatar.gltf-895cdba08b1f9f65fd040b94be105025.scn"
+path="res://.import/spaceship3.gltf-8e1d0ca545cab25c69257de7b2b81d58.scn"
 
 [deps]
 
-source_file="res://Assets/Spaceship/PesawatAvatar.gltf"
-dest_files=[ "res://.import/PesawatAvatar.gltf-895cdba08b1f9f65fd040b94be105025.scn" ]
+source_file="res://Assets/Spaceship/spaceship3.gltf"
+dest_files=[ "res://.import/spaceship3.gltf-8e1d0ca545cab25c69257de7b2b81d58.scn" ]
 
 [params]
 

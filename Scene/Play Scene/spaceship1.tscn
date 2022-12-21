@@ -38,7 +38,7 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.03575
 mesh = SubResource( 1 )
 
 [node name="Gun0" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36083e-06, 0.759828, -15.5661 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36083e-06, 0.862559, -15.5661 )
 
 [node name="Particles2" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.704197, 1.05107, -7.93485 )

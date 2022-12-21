@@ -45,3 +45,19 @@ func _physics_process(delta): #function for move
 	#cooldown
 	if cooldown > 0:
 		cooldown -= delta
+
+func _process(delta):
+	if(!Globals.spacheship1_isequipped):
+		$Cube.visible = false
+	else:
+		$Cube.visible = true
+	
+	if(!Globals.spacheship2_isequipped):
+		$Cube2.visible = false
+	else:
+		$Cube2.visible = true
+	
+	if(!Globals.spacheship2_isequipped):
+		$Cube3.visible = false
+	else:
+		$Cube3.visible = true
