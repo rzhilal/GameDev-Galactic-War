@@ -30,8 +30,8 @@ margin_bottom = 617.0
 color = Color( 0, 0, 0, 0.439216 )
 
 [node name="PausemenuUi" type="Sprite" parent="Pause/ColorRect"]
-position = Vector2( 507, 292 )
-scale = Vector2( 0.406019, 0.2 )
+position = Vector2( 517, 288 )
+scale = Vector2( 0.390047, 0.190984 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="Pause/ColorRect"]

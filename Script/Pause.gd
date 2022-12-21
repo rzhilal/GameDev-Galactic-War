@@ -1,7 +1,7 @@
 extends Control
 
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("escape"):
 		visible = true
 		get_tree().paused = true
 
