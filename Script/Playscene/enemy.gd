@@ -27,5 +27,5 @@ func _on_Area_body_entered(body):
 		$Area/CollisionShape.disabled = true
 #		yield(get_tree().create_timer(2), "timeout")
 		Globals.reset()
-		get_tree().change_scene("res://Scene/Menu/mainmenu.tscn")
+		get_tree().change_scene("res://Scene/GameOver.tscn")
 

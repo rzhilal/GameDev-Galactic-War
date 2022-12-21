@@ -9,5 +9,6 @@ script = ExtResource( 3 )
 move_to_scene = ExtResource( 2 )
 
 [node name="SplashCircleJump02" parent="." instance=ExtResource( 1 )]
+logo_path = "res://Assets/Images/Logo.png"
 title = "RDZ Gamesoft."
 description = "Spaceship Galactic War"

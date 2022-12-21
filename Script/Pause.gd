@@ -2,8 +2,13 @@ extends Control
 
 func _process(delta):
 	if Input.is_action_pressed("escape"):
-		visible = true
-		get_tree().paused = true
+		if(visible):
+			hide()
+			get_tree().paused = false
+		else:
+			visible = true
+			get_tree().paused = true
+			
 
 func _on_continue_pressed():
 	hide()

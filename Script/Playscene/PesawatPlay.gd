@@ -57,7 +57,7 @@ func _process(delta):
 	else:
 		$Cube2.visible = true
 	
-	if(!Globals.spacheship2_isequipped):
+	if(!Globals.spacheship3_isequipped):
 		$Cube3.visible = false
 	else:
 		$Cube3.visible = true
