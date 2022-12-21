@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/demo_collection/circle_jump_02/splash_screen.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/Menu/mainmenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/awesome_splash/core/SplashContainer.gd" type="Script" id=3]
+
+[node name="SplashContainer" type="Node2D"]
+script = ExtResource( 3 )
+move_to_scene = ExtResource( 2 )
+custom_node/type = 0
+custom_node/default_time = 1.0
+skip/type = 0
+transition_time = 1.0
+fade_color = Color( 1, 1, 1, 1 )
+
+[node name="SplashCircleJump02" parent="." instance=ExtResource( 1 )]
+title = "RDZ Gamesoft."
+description = "Spaceship Galactic War"
