@@ -42,8 +42,8 @@ custom_fonts/font = SubResource( 1 )
 text = "Nama Kelompok B2 :
 
 - 211511044 Muchamad Diaz Adhari
-- 211511058 Rizq Hilal A
-- 211511064 Zahratul Marhidiyah"
+- 211511058 Rizq Hilal Rifaasya
+- 211511064 Zahratul Mardiyah"
 
 [node name="Button" type="Button" parent="."]
 margin_left = 47.0

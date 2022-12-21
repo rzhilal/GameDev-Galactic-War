@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Assets/Fonts/king-gaming-free-trial.regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://addons/awesome_splash/assets/font/LilitaOne-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Spaceship/environment.png" type="Texture" id=2]
 [ext_resource path="res://Script/Menu/Help.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=3]
-size = 23
+size = 31
 font_data = ExtResource( 1 )
 
 [sub_resource type="Curve" id=4]
@@ -34,22 +34,23 @@ scale = Vector2( 0.438087, 0.578793 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 93.0
-margin_top = 118.0
-margin_right = 945.0
-margin_bottom = 475.0
+margin_left = 101.0
+margin_top = 56.0
+margin_right = 953.0
+margin_bottom = 521.0
 custom_fonts/font = SubResource( 3 )
-text = "  HELP
-- Menggunakan Key Arrow pada keyboard :
-  - Right Arrow Control Arah Kanan
-  - Left  Arrow Control Arah Kiri
-  - Bottom Arrow Control Arah Bawah
-  - UP Arrow Control Arah Atas
+text = "                                                                   HELP
+												
+- Menggunakan Key Arrow pada keyboard:
+      - Right Arrow Control Arah Kanan
+      - Left  Arrow Control Arah Kiri
+      - Bottom Arrow Control Arah Bawah
+      - UP Arrow Control Arah Atas
 - Setiap menghancurkan satu pesawat menambah score
 - nyawa yang diberikan hanya 3 nyawa
 - penambahan level up setiap menghancurkan lebih banyak
-  pesawat"
-align = 1
+  pesawat
+"
 
 [node name="Button" type="Button" parent="."]
 margin_left = 47.0
