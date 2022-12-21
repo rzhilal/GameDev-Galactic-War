@@ -30,3 +30,7 @@ func _on_PlayButton_pressed():
 
 func _on_HelpButton_pressed():
 	get_tree().change_scene("res://Scene/Help/Help.tscn")
+
+
+func _on_ShopButton_pressed():
+	get_tree().change_scene("res://Scene/Shop/Shop.tscn")

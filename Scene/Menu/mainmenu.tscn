@@ -95,6 +95,7 @@ text = "SPACESHIP GALACTIC WAR
 "
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ShopButton" to="." method="_on_ShopButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HelpButton" to="." method="_on_HelpButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/AboutButton" to="." method="_on_AboutButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]
