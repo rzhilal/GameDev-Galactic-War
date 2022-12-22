@@ -65,7 +65,7 @@ text = "Play"
 margin_top = 24.0
 margin_right = 97.0
 margin_bottom = 44.0
-text = "Skin"
+text = "inventori"
 
 [node name="HelpButton" type="Button" parent="VBoxContainer"]
 margin_top = 48.0
