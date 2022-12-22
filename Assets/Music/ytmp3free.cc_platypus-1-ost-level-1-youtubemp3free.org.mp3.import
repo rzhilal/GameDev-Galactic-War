@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ytmp3free.cc_platypus-1-ost-level-1-youtubemp3free.org.mp3-3b2edfee5cae2bd1d95e9f980cc4609d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/ytmp3free.cc_platypus-1-ost-level-1-youtubemp3free.org.mp3"
+dest_files=[ "res://.import/ytmp3free.cc_platypus-1-ost-level-1-youtubemp3free.org.mp3-3b2edfee5cae2bd1d95e9f980cc4609d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

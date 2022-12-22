@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://addons/awesome_splash/assets/font/LilitaOne-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Spaceship/environment.png" type="Texture" id=2]
 [ext_resource path="res://Script/Menu/Help.gd" type="Script" id=3]
+[ext_resource path="res://Assets/styles/selected_button_hover.tres" type="StyleBox" id=4]
+[ext_resource path="res://Assets/styles/non_selected_button.tres" type="StyleBox" id=5]
+[ext_resource path="res://Assets/styles/button_hover.tres" type="StyleBox" id=6]
 
 [sub_resource type="DynamicFont" id=3]
 size = 27
@@ -60,6 +63,10 @@ margin_left = 47.0
 margin_top = 543.0
 margin_right = 112.0
 margin_bottom = 568.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 5 )
 text = "Back"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

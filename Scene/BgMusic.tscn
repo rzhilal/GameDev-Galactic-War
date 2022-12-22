@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Music/Interstellar Main Theme - Hans Zimmer (128 kbps).mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Music/ytmp3free.cc_platypus-1-ost-level-1-youtubemp3free.org.mp3" type="AudioStream" id=1]
 
 [node name="BgMusic" type="Node2D"]
 
