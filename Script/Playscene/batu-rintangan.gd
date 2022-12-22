@@ -13,9 +13,6 @@ func _physics_process(delta):
 func _on_Area_body_entered(body):
 	if body.is_in_group("avatarship"):
 		Globals.life -= 1
-		queue_free()
-		visible = false
-		$Area/CollisionShape.disabled = true
 		
 	if Globals.life == 0:
 		body.queue_free()
