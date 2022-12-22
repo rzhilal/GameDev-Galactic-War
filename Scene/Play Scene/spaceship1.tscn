@@ -25,7 +25,7 @@ surfaces/0 = {
 }
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 5.17904, 1, 5.88039 )
+extents = Vector3( 4.77198, 1, 5.10421 )
 
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 24.1579, 11.8365, 1 )
@@ -110,8 +110,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.25298, 0 )
 shape = SubResource( 3 )
 
 [node name="Cube2" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04688e-06, 1.21274, -11.9749 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07171e-06, 1.03422, -12.2589 )
 mesh = SubResource( 4 )
 
 [node name="Cube3" parent="." instance=ExtResource( 8 )]
-transform = Transform( -2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 1.13471e-06, 0.276311, -12.9796 )
+transform = Transform( -2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 1.13471e-06, -0.106934, -12.9796 )

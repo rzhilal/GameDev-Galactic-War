@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 4.44767, 1, 5.85713 )
+
+[node name="Spatial" type="Spatial" groups=["avatarship"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07172e-06, 1.41797, -12.2591 )
+shape = SubResource( 1 )
